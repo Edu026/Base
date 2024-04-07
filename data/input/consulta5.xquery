@@ -8,21 +8,24 @@ PostTypeId = 2 Respuestas
 
 let $preguntes := 
 
-  for $p in /posts/row
+  for $p in /posts/row[@PostTypeId="1"]
   
-  let $mva := ""
-  
+  let $mva := 
+    for $a in posts/row[@ParentId = $p/@Id]
+    order by xs:integer($a/@Score) descending
+    return <answer>{$a/@Body}</answer> 
+    
   let $votescount := count(votes/row[@PostId = $p/@Id])
     
-  order by $p/@Score descending
+  order by xs:integer($p/@Score) descending
    
   return 
   <pregunta>
     <title>{$p/@Title/string()}</title>
     <body>{$p/@Body/string()}</body>
-    <mostVotedAnswer>{$mva}</mostVotedAnswer>
+    <mostVotedAnswer>{$mva[1]/@Body/string()}</mostVotedAnswer>
     <votes>{$votescount}</votes>
-    <Tags>{$p/@Tags/string()}</Tags>
+    <tags>{$p/@Tags/string()}</tags>
   </pregunta>
   
 return $preguntes

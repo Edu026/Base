@@ -1,0 +1,458 @@
+<tags>
+  <tag>
+    <name>espresso</name>
+    <count Count="208"/>
+  </tag>
+  <tag>
+    <name>brewing-process</name>
+    <count Count="177"/>
+  </tag>
+  <tag>
+    <name>flavor</name>
+    <count Count="129"/>
+  </tag>
+  <tag>
+    <name>ground-coffee</name>
+    <count Count="119"/>
+  </tag>
+  <tag>
+    <name>espresso-machine</name>
+    <count Count="117"/>
+  </tag>
+  <tag>
+    <name>health</name>
+    <count Count="114"/>
+  </tag>
+  <tag>
+    <name>beans</name>
+    <count Count="105"/>
+  </tag>
+  <tag>
+    <name>moka</name>
+    <count Count="97"/>
+  </tag>
+  <tag>
+    <name>caffeine</name>
+    <count Count="95"/>
+  </tag>
+  <tag>
+    <name>equipment</name>
+    <count Count="84"/>
+  </tag>
+  <tag>
+    <name>coffee-machines</name>
+    <count Count="83"/>
+  </tag>
+  <tag>
+    <name>grinder</name>
+    <count Count="79"/>
+  </tag>
+  <tag>
+    <name>french-press</name>
+    <count Count="66"/>
+  </tag>
+  <tag>
+    <name>coffee-culture</name>
+    <count Count="62"/>
+  </tag>
+  <tag>
+    <name>roasting</name>
+    <count Count="60"/>
+  </tag>
+  <tag>
+    <name>storage</name>
+    <count Count="59"/>
+  </tag>
+  <tag>
+    <name>drip-brew</name>
+    <count Count="59"/>
+  </tag>
+  <tag>
+    <name>aeropress</name>
+    <count Count="53"/>
+  </tag>
+  <tag>
+    <name>cleaning</name>
+    <count Count="52"/>
+  </tag>
+  <tag>
+    <name>cold-brew</name>
+    <count Count="46"/>
+  </tag>
+  <tag>
+    <name>extraction</name>
+    <count Count="44"/>
+  </tag>
+  <tag>
+    <name>milk</name>
+    <count Count="40"/>
+  </tag>
+  <tag>
+    <name>pour-over</name>
+    <count Count="38"/>
+  </tag>
+  <tag>
+    <name>instant</name>
+    <count Count="38"/>
+  </tag>
+  <tag>
+    <name>filter</name>
+    <count Count="35"/>
+  </tag>
+  <tag>
+    <name>maintenance</name>
+    <count Count="33"/>
+  </tag>
+  <tag>
+    <name>bean-varieties</name>
+    <count Count="31"/>
+  </tag>
+  <tag>
+    <name>turkish-coffee</name>
+    <count Count="31"/>
+  </tag>
+  <tag>
+    <name>temperature</name>
+    <count Count="28"/>
+  </tag>
+  <tag>
+    <name>chemistry</name>
+    <count Count="28"/>
+  </tag>
+  <tag>
+    <name>flavored-coffee</name>
+    <count Count="28"/>
+  </tag>
+  <tag>
+    <name>home-roasting</name>
+    <count Count="25"/>
+  </tag>
+  <tag>
+    <name>paper-filter</name>
+    <count Count="23"/>
+  </tag>
+  <tag>
+    <name>steamed-milk</name>
+    <count Count="22"/>
+  </tag>
+  <tag>
+    <name>acid</name>
+    <count Count="21"/>
+  </tag>
+  <tag>
+    <name>crema</name>
+    <count Count="19"/>
+  </tag>
+  <tag>
+    <name>decaffeinated</name>
+    <count Count="19"/>
+  </tag>
+  <tag>
+    <name>latte</name>
+    <count Count="18"/>
+  </tag>
+  <tag>
+    <name>iced-coffee</name>
+    <count Count="17"/>
+  </tag>
+  <tag>
+    <name>nespresso</name>
+    <count Count="16"/>
+  </tag>
+  <tag>
+    <name>bean-to-cup</name>
+    <count Count="16"/>
+  </tag>
+  <tag>
+    <name>strength</name>
+    <count Count="15"/>
+  </tag>
+  <tag>
+    <name>v60</name>
+    <count Count="15"/>
+  </tag>
+  <tag>
+    <name>arabica</name>
+    <count Count="15"/>
+  </tag>
+  <tag>
+    <name>foamed-milk</name>
+    <count Count="15"/>
+  </tag>
+  <tag>
+    <name>keurig</name>
+    <count Count="14"/>
+  </tag>
+  <tag>
+    <name>chemex</name>
+    <count Count="14"/>
+  </tag>
+  <tag>
+    <name>whole-bean</name>
+    <count Count="13"/>
+  </tag>
+  <tag>
+    <name>cup</name>
+    <count Count="13"/>
+  </tag>
+  <tag>
+    <name>percolator</name>
+    <count Count="13"/>
+  </tag>
+  <tag>
+    <name>aroma</name>
+    <count Count="12"/>
+  </tag>
+  <tag>
+    <name>sugar</name>
+    <count Count="12"/>
+  </tag>
+  <tag>
+    <name>starbucks</name>
+    <count Count="12"/>
+  </tag>
+  <tag>
+    <name>latte-art</name>
+    <count Count="12"/>
+  </tag>
+  <tag>
+    <name>tamping</name>
+    <count Count="11"/>
+  </tag>
+  <tag>
+    <name>growing</name>
+    <count Count="11"/>
+  </tag>
+  <tag>
+    <name>farming</name>
+    <count Count="11"/>
+  </tag>
+  <tag>
+    <name>pods</name>
+    <count Count="11"/>
+  </tag>
+  <tag>
+    <name>history</name>
+    <count Count="11"/>
+  </tag>
+  <tag>
+    <name>cappuccino</name>
+    <count Count="10"/>
+  </tag>
+  <tag>
+    <name>quality</name>
+    <count Count="10"/>
+  </tag>
+  <tag>
+    <name>coffee-shop</name>
+    <count Count="10"/>
+  </tag>
+  <tag>
+    <name>froth</name>
+    <count Count="10"/>
+  </tag>
+  <tag>
+    <name>freshness</name>
+    <count Count="10"/>
+  </tag>
+  <tag>
+    <name>troubleshooting</name>
+    <count Count="10"/>
+  </tag>
+  <tag>
+    <name>kopiluwak</name>
+    <count Count="9"/>
+  </tag>
+  <tag>
+    <name>tasting</name>
+    <count Count="9"/>
+  </tag>
+  <tag>
+    <name>coffee-blends</name>
+    <count Count="9"/>
+  </tag>
+  <tag>
+    <name>packaging</name>
+    <count Count="9"/>
+  </tag>
+  <tag>
+    <name>roast</name>
+    <count Count="9"/>
+  </tag>
+  <tag>
+    <name>capsule</name>
+    <count Count="8"/>
+  </tag>
+  <tag>
+    <name>green-coffee</name>
+    <count Count="8"/>
+  </tag>
+  <tag>
+    <name>terminology</name>
+    <count Count="7"/>
+  </tag>
+  <tag>
+    <name>technique</name>
+    <count Count="7"/>
+  </tag>
+  <tag>
+    <name>grind-size</name>
+    <count Count="7"/>
+  </tag>
+  <tag>
+    <name>coffee-bloom</name>
+    <count Count="6"/>
+  </tag>
+  <tag>
+    <name>coffee-berries</name>
+    <count Count="6"/>
+  </tag>
+  <tag>
+    <name>food</name>
+    <count Count="6"/>
+  </tag>
+  <tag>
+    <name>recommendation</name>
+    <count Count="6"/>
+  </tag>
+  <tag>
+    <name>induction</name>
+    <count Count="5"/>
+  </tag>
+  <tag>
+    <name>digestion</name>
+    <count Count="5"/>
+  </tag>
+  <tag>
+    <name>identify-this</name>
+    <count Count="5"/>
+  </tag>
+  <tag>
+    <name>business</name>
+    <count Count="5"/>
+  </tag>
+  <tag>
+    <name>vietnam</name>
+    <count Count="5"/>
+  </tag>
+  <tag>
+    <name>portafilter</name>
+    <count Count="5"/>
+  </tag>
+  <tag>
+    <name>bulletproof</name>
+    <count Count="4"/>
+  </tag>
+  <tag>
+    <name>barista</name>
+    <count Count="4"/>
+  </tag>
+  <tag>
+    <name>specific-machine</name>
+    <count Count="4"/>
+  </tag>
+  <tag>
+    <name>water</name>
+    <count Count="4"/>
+  </tag>
+  <tag>
+    <name>single-serving</name>
+    <count Count="3"/>
+  </tag>
+  <tag>
+    <name>tradition</name>
+    <count Count="3"/>
+  </tag>
+  <tag>
+    <name>siphon</name>
+    <count Count="3"/>
+  </tag>
+  <tag>
+    <name>syphon</name>
+    <count Count="3"/>
+  </tag>
+  <tag>
+    <name>recycling</name>
+    <count Count="3"/>
+  </tag>
+  <tag>
+    <name>egg-coffee</name>
+    <count Count="3"/>
+  </tag>
+  <tag>
+    <name>trade-association</name>
+    <count Count="3"/>
+  </tag>
+  <tag>
+    <name>soy-milk</name>
+    <count Count="3"/>
+  </tag>
+  <tag>
+    <name>resting</name>
+    <count Count="3"/>
+  </tag>
+  <tag>
+    <name>descaling</name>
+    <count Count="3"/>
+  </tag>
+  <tag>
+    <name>specialty-coffee</name>
+    <count Count="3"/>
+  </tag>
+  <tag>
+    <name>rating</name>
+    <count Count="2"/>
+  </tag>
+  <tag>
+    <name>vacuum-coffee-maker</name>
+    <count Count="2"/>
+  </tag>
+  <tag>
+    <name>mouthfeel</name>
+    <count Count="2"/>
+  </tag>
+  <tag>
+    <name>accidents</name>
+    <count Count="2"/>
+  </tag>
+  <tag>
+    <name>dessert</name>
+    <count Count="2"/>
+  </tag>
+  <tag>
+    <name>water-hardness</name>
+    <count Count="2"/>
+  </tag>
+  <tag>
+    <name>dalgona</name>
+    <count Count="2"/>
+  </tag>
+  <tag>
+    <name>filter-basket</name>
+    <count Count="2"/>
+  </tag>
+  <tag>
+    <name>pressurized-basket</name>
+    <count Count="2"/>
+  </tag>
+  <tag>
+    <name>mocha</name>
+    <count Count="1"/>
+  </tag>
+  <tag>
+    <name>liquor</name>
+    <count Count="1"/>
+  </tag>
+  <tag>
+    <name>phin</name>
+    <count Count="1"/>
+  </tag>
+  <tag>
+    <name>bottomless-portafilter</name>
+    <count Count="1"/>
+  </tag>
+  <tag>
+    <name>distribution-tool</name>
+    <count Count="1"/>
+  </tag>
+</tags>

@@ -1,6 +1,12 @@
 package cat.iesesteveterradas;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.stream.Collectors;
 
 import org.basex.api.client.ClientSession;
 import org.basex.core.*;
@@ -25,41 +31,95 @@ public class Main {
         try (ClientSession session = new ClientSession(host, port, username, password)) {
             logger.info("Connected to BaseX server.");
 
-            session.execute(new Open("factbook")); 
+            //session.execute(new Open("factbook")); 
+            
+            session.execute(new Open("coffee.stackexchange"));
+            String currentWorkingDirectory = System.getProperty("user.dir");
+            System.out.println("Directorio de trabajo actual: " + currentWorkingDirectory);
             
             // Example query - adjust as needed
-            String myQuery = "sum(//country/@population/number())";
+            String filePath = "data/input/consulta1.xquery";
+            String myQuery = readXPathQueryFromFile(filePath);
 
             // Execute the query
             String result = session.execute(new XQuery(myQuery));
             // Print the result
+            logger.info(myQuery);
             logger.info("Query Result:");
             logger.info(result);
+            //Save the result 
+            saveResultAsXML(result, "./data/output/resultConsulta1.xml");
 
-            myQuery = """
-                declare function local:gdpPerArea($country as element(country)) as xs:double? {
-                    let $gdpTotal := number($country/@gdp_total) * 1000000 (: Convertint de milions a unitats per precisió :)
-                    let $totalArea := number($country/@total_area) (: Asumint que l'àrea està en quilòmetres quadrats :)
-                    return if ($totalArea > 0) then $gdpTotal div $totalArea else ()
-                  };
-                
-                  for $country in //country
-                  let $gdpRatio := local:gdpPerArea($country)
-                  order by $gdpRatio descending
-                  return 
-                    <country name="{$country/@name}" gdp_per_area="{$gdpRatio}"/>                    
-            """;
+            // Query 2
+            filePath = "data/input/consulta2.xquery";
+            myQuery = readXPathQueryFromFile(filePath);
 
             // Execute the query
             result = session.execute(new XQuery(myQuery));
             // Print the result
+            logger.info(myQuery);
             logger.info("Query Result:");
             logger.info(result);
+            //Save the result 
+            saveResultAsXML(result, "./data/output/resultConsulta2.xml");
+
+            // Query 3
+            filePath = "data/input/consulta3.xquery";
+            myQuery = readXPathQueryFromFile(filePath);
+
+            // Execute the query
+            result = session.execute(new XQuery(myQuery));
+            // Print the result
+            logger.info(myQuery);
+            logger.info("Query Result:");
+            logger.info(result);
+            //Save the result 
+            saveResultAsXML(result, "./data/output/resultConsulta3.xml");
+
+            // Query 4
+            filePath = "data/input/consulta4.xquery";
+            myQuery = readXPathQueryFromFile(filePath);
+
+            // Execute the query
+            result = session.execute(new XQuery(myQuery));
+            // Print the result
+            logger.info(myQuery);
+            logger.info("Query Result:");
+            logger.info(result);
+            //Save the result 
+            saveResultAsXML(result, "./data/output/resultConsulta4.xml");
+
+            // Query 5
+            filePath = "data/input/consulta5.xquery";
+            myQuery = readXPathQueryFromFile(filePath);
+
+            // Execute the query
+            result = session.execute(new XQuery(myQuery));
+            // Print the result
+            logger.info(myQuery);
+            logger.info("Query Result:");
+            logger.info(result);
+            //Save the result 
+            saveResultAsXML(result, "./data/output/resultConsulta5.xml");
 
         } catch (BaseXException e) {
             logger.error("Error connecting or executing the query: " + e.getMessage());
         } catch (IOException e) {
             logger.error(e.getMessage());
         }        
+    } 
+
+    // Método para leer el contenido del archivo en una cadena
+    public static String readXPathQueryFromFile(String filePath) throws IOException {
+        try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
+            return reader.lines().collect(Collectors.joining(System.lineSeparator()));
+        }
+    }
+    // Método para guardar el resultado como un archivo XML
+    public static void saveResultAsXML(String result, String filePath) throws IOException {
+        try (PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter(filePath)))) {
+            logger.info("File Saved");
+            writer.println(result);
+        }
     }
 }
