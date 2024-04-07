@@ -18,12 +18,15 @@ import edu.stanford.nlp.pipeline.*;
 import edu.stanford.nlp.sentiment.SentimentCoreAnnotations;
 import edu.stanford.nlp.util.CoreMap;
 
-
+import java.io.BufferedReader;
 import java.io.FileInputStream;
+import java.io.FileReader;
+import java.io.IOException;
 import java.io.InputStream;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Properties;
+import java.util.stream.Collectors;
 
 
 public class ExecutarExempleNLPMain {
@@ -49,7 +52,7 @@ public class ExecutarExempleNLPMain {
 
         // Tokenization
         TokenizerModel modelToken = new TokenizerModel(modelInToken);
-        TokenizerME tokenizer = new TokenizerME(modelToken);
+        TokenizerME tokenizer = new TokenizerME(modelToken); 
         logger.info("\nTokenization and POS Tagging:");
         for (String sentence : sentences) {
             try{
@@ -75,7 +78,7 @@ public class ExecutarExempleNLPMain {
         for (String sentence : sentences) {
             String[] tokens = tokenizer.tokenize(sentence);
             opennlp.tools.util.Span[] nameSpans = nameFinder.find(tokens);
-            for (opennlp.tools.util.Span s : nameSpans) {
+            for (opennlp.tools.util.Span s : nameSpans) { 
                 logger.info("Entity: " + tokens[s.getStart()]);
             }
         }
@@ -129,5 +132,11 @@ public class ExecutarExempleNLPMain {
             String sentiment = sentence.get(SentimentCoreAnnotations.SentimentClass.class);
             logger.info("Sentiment: " + sentiment);
         }        
+    }
+    // Método para leer el contenido del archivo en una cadena
+    public static String readXPathQueryFromFile(String filePath) throws IOException {
+        try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
+            return reader.lines().collect(Collectors.joining(System.lineSeparator()));
+        }
     }
 }
