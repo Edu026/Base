@@ -53,6 +53,7 @@ public class ExecutarExempleNLPMain {
         // Tokenization
         TokenizerModel modelToken = new TokenizerModel(modelInToken);
         TokenizerME tokenizer = new TokenizerME(modelToken); 
+        /*
         logger.info("\nTokenization and POS Tagging:");
         for (String sentence : sentences) {
             try{
@@ -70,8 +71,9 @@ public class ExecutarExempleNLPMain {
                 logger.error(e.getMessage());
             }
         }
-
+        */
         // Named Entity Recognition
+        /*
         TokenNameFinderModel modelPerson = new TokenNameFinderModel(modelInPerson);
         NameFinderME nameFinder = new NameFinderME(modelPerson);
         logger.info("\nNamed Entity Recognition:");
@@ -88,7 +90,7 @@ public class ExecutarExempleNLPMain {
         modelInToken.close();
         modelInPOS.close();
         modelInPerson.close();
-
+*/
 
         // Inicialitza Stanford CoreNLP
         Properties props = new Properties();
@@ -104,18 +106,18 @@ public class ExecutarExempleNLPMain {
 
         for (CoreMap sentence : sentencesList2) {
             // Mostra tokens i etiquetes POS de cada frase
-            for (CoreLabel token : sentence.get(TokensAnnotation.class)) {
+           /* for (CoreLabel token : sentence.get(TokensAnnotation.class)) {
                 String word = token.get(TextAnnotation.class);
                 String pos = token.get(PartOfSpeechAnnotation.class);
                 logger.info(word + " (" + pos + ")");
-            }
-            
+            }*/
+            /*
             // Mostra el reconeixement d'entitats anomenades
             for (CoreLabel token : sentence.get(TokensAnnotation.class)) {
                 String word = token.get(TextAnnotation.class);
                 String ne = token.get(NamedEntityTagAnnotation.class);
                 logger.info("Entity: " + word + " (" + ne + ")");
-            }
+            }*/
             
             // Reconeixement de Named Entity Recognition (NER)
             for (CoreLabel token : sentence.get(TokensAnnotation.class)) {
@@ -129,9 +131,10 @@ public class ExecutarExempleNLPMain {
             }
 
             // Anàlisi de sentiments
-            String sentiment = sentence.get(SentimentCoreAnnotations.SentimentClass.class);
-            logger.info("Sentiment: " + sentiment);
-        }        
+           /* String sentiment = sentence.get(SentimentCoreAnnotations.SentimentClass.class);
+            logger.info("Sentiment: " + sentiment);*/
+        }   
+        
     }
     // Método para leer el contenido del archivo en una cadena
     public static String readXPathQueryFromFile(String filePath) throws IOException {
@@ -140,3 +143,5 @@ public class ExecutarExempleNLPMain {
         }
     }
 }
+
+// NO FA FALTA EL BODY PER FER LA 3.1
